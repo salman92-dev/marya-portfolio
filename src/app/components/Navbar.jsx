@@ -60,14 +60,14 @@ export default function Navbar() {
         {/* Subtle gradient overlay */}
         <div className="absolute inset-0 rounded-[28px] bg-gradient-to-tr from-purple-500/5 via-transparent to-blue-500/5 pointer-events-none" />
 
-        <div className="relative px-6 py-4">
+        <div className="relative px-4 py-4">
           {/* Top Row */}
           <div className="flex items-center justify-between">
             {/* Profile/Logo */}
             <Link href="/" className="group flex items-center gap-3">
               <div className="relative">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500 to-blue-500 blur-md opacity-50 group-hover:opacity-75 transition-opacity" />
-                <div className="relative purl text-3xl md:text-4xl font-bold bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent px-4 py-2 rounded-2xl border border-white/10 backdrop-blur-sm">
+                <div className="relative bilgie text-2xl md:text-4xl font-bold bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent px-4 py-2 rounded-2xl border border-white/10 backdrop-blur-sm">
                   Marya
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setActiveLink(link.href)}
-                  className={`purl relative px-6 py-2.5 text-sm uppercase tracking-[0.15em] font-medium transition-all duration-300 rounded-2xl group ${
+                  className={`font-2 relative px-6 py-2.5 text-sm uppercase tracking-[0.15em] font-medium transition-all duration-300 rounded-2xl group ${
                     activeLink === link.href
                       ? "text-white"
                       : "text-white hover:text-white"
@@ -102,7 +102,7 @@ export default function Navbar() {
             {/* Desktop Contact Button */}
             <Link
               href="/contact"
-              className="hidden lg:flex items-center gap-2 purl text-sm font-semibold uppercase tracking-wider rounded-2xl bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-3 text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105 group"
+              className="hidden lg:flex items-center gap-2 bilgie text-sm font-semibold uppercase tracking-wider rounded-2xl bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-3 text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105 group"
             >
               <span>Contact</span>
               <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -168,7 +168,7 @@ export default function Navbar() {
                             setOpen(false);
                             setActiveLink(link.href);
                           }}
-                          className={`purl flex items-center justify-between px-5 py-4 text-base uppercase tracking-[0.15em] font-medium rounded-2xl transition-all duration-300 group ${
+                          className={`font-2 flex items-center justify-between px-5 py-4 text-base uppercase tracking-[0.15em] font-medium rounded-2xl transition-all duration-300 group ${
                             activeLink === link.href
                               ? "bg-white/10 text-white border border-white/20"
                               : "text-white hover:text-white hover:bg-white/5"
@@ -193,7 +193,7 @@ export default function Navbar() {
                       <Link
                         href="/contact"
                         onClick={() => setOpen(false)}
-                        className="purl flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-4 text-base uppercase tracking-wider font-semibold text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 active:scale-95"
+                        className="bilgie flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-4 text-base uppercase tracking-wider font-semibold text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 active:scale-95"
                       >
                         <span>Contact</span>
                         <ArrowUpRight size={18} />
