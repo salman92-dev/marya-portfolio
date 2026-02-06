@@ -25,53 +25,54 @@ export default function AboutSection() {
           gradientWidth={120}
         >
           {[
-            "/images/about-1.avif",
-            "/images/about-2.avif",
-            "/images/react.png",
-            "/imagess/tailwind.png",
-            "/images/framer.png",
-            "/images/vercel.png",
+            "/images/about-1.jpeg",
+            "/images/about-2.jpeg",
+            "/images/about-3.jpeg",
+            "/images/about-4.jpeg",
+            "/images/about-5.jpeg",
+            "/images/about-6.jpeg",
           ].map((src, index) => (
             <div
               key={index}
-              className="mx-4 flex items-center justify-center opacity-80 hover:opacity-100 transition"
+              className="mx-4 h-[25vh] md:h-[35vh] flex items-center justify-center transition"
             >
               <Image
                 src={src}
                 alt="Brand logo"
                 width={400}
                 height={400}
-                className="rounded-2xl object-contain grayscale hover:grayscale-0 transition duration-300"
+                className="rounded-2xl h-full transition duration-300"
               />
             </div>
           ))}
         </Marquee>
       </div>
-      <div className="mt-16 w-full">
+
+      <div className="mt-12 w-full">
         <Marquee
           speed={80}
-          direction="right"
           gradient={true}
+          direction="right"
           gradientWidth={120}
         >
           {[
-            "/images/about-1.png",
-            "/images/about-2.png",
-            "/images/react.png",
-            "/imagess/tailwind.png",
-            "/images/framer.png",
-            "/images/vercel.png",
+            "/images/about-1.jpeg",
+            "/images/about-2.jpeg",
+            "/images/about-3.jpeg",
+            "/images/about-4.jpeg",
+            "/images/about-5.jpeg",
+            "/images/about-6.jpeg",
           ].map((src, index) => (
             <div
               key={index}
-              className="mx-4 flex items-center justify-center opacity-80 hover:opacity-100 transition"
+              className="mx-4 h-[25vh] md:h-[35vh] flex items-center justify-center transition"
             >
               <Image
                 src={src}
                 alt="Brand logo"
                 width={400}
                 height={400}
-                className="rounded-2xl object-contain grayscale hover:grayscale-0 transition duration-300"
+                className="rounded-2xl h-full transition duration-300"
               />
             </div>
           ))}

@@ -44,7 +44,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/projects", label: "Projects" },
+    { href: "#projects", label: "Projects" },
     { href: "/about", label: "About" },
     { href: "/pixelzone", label: "Pixelzone" },
   ];
@@ -101,7 +101,7 @@ export default function Navbar() {
 
             {/* Desktop Contact Button */}
             <Link
-              href="/contact"
+              href="#contact"
               className="hidden lg:flex items-center gap-2 bilgie text-sm font-semibold uppercase tracking-wider rounded-2xl bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-3 text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105 group"
             >
               <span>Contact</span>
@@ -191,7 +191,7 @@ export default function Navbar() {
                       className="mt-4"
                     >
                       <Link
-                        href="/contact"
+                        href="#contact"
                         onClick={() => setOpen(false)}
                         className="bilgie flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-4 text-base uppercase tracking-wider font-semibold text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 active:scale-95"
                       >

@@ -8,6 +8,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <AboutSection />
+      <div className="py-10">
+
+      </div>
     </div>
   );
 }
