@@ -77,7 +77,7 @@ export default function Hero() {
             height: particle.size,
           }}
           animate={{
-            y: [0, -30, 0],
+            y: [0, -70, 0],
             opacity: [0.2, 0.5, 0.2],
           }}
           transition={{
