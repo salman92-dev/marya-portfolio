@@ -55,7 +55,7 @@ export default function Navbar() {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-        className="relative rounded-[28px] bg-gradient-to-br from-neutral-900/95 via-neutral-800/95 to-neutral-900/95 backdrop-blur-xl shadow-2xl border border-white/10"
+        className="relative rounded-[28px] bg-black/40 backdrop-blur-3xl shadow-2xl border border-white/10"
       >
         {/* Subtle gradient overlay */}
         <div className="absolute inset-0 rounded-[28px] bg-gradient-to-tr from-purple-500/5 via-transparent to-blue-500/5 pointer-events-none" />
@@ -68,7 +68,7 @@ export default function Navbar() {
               <div className="relative">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500 to-blue-500 blur-md opacity-50 group-hover:opacity-75 transition-opacity" />
                 <div className="relative purl text-3xl md:text-4xl font-bold bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent px-4 py-2 rounded-2xl border border-white/10 backdrop-blur-sm">
-                  Maria
+                  Marya
                 </div>
               </div>
             </Link>
@@ -83,7 +83,7 @@ export default function Navbar() {
                   className={`purl relative px-6 py-2.5 text-sm uppercase tracking-[0.15em] font-medium transition-all duration-300 rounded-2xl group ${
                     activeLink === link.href
                       ? "text-white"
-                      : "text-neutral-400 hover:text-white"
+                      : "text-white hover:text-white"
                   }`}
                 >
                   {activeLink === link.href && (
@@ -171,7 +171,7 @@ export default function Navbar() {
                           className={`purl flex items-center justify-between px-5 py-4 text-base uppercase tracking-[0.15em] font-medium rounded-2xl transition-all duration-300 group ${
                             activeLink === link.href
                               ? "bg-white/10 text-white border border-white/20"
-                              : "text-neutral-400 hover:text-white hover:bg-white/5"
+                              : "text-white hover:text-white hover:bg-white/5"
                           }`}
                         >
                           <span>{link.label}</span>

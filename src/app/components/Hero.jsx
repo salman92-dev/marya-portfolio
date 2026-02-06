@@ -69,7 +69,7 @@ export default function Hero() {
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
-          className="absolute rounded-full bg-white/20 backdrop-blur-sm"
+          className="absolute rounded-full bg-white/50 backdrop-blur-sm"
           style={{
             left: `${particle.x}%`,
             top: `${particle.y}%`,
@@ -89,17 +89,6 @@ export default function Hero() {
         />
       ))}
 
-      {/* Interactive cursor glow */}
-      <motion.div
-        className="pointer-events-none absolute w-96 h-96 rounded-full opacity-30"
-        style={{
-          background: "radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, transparent 70%)",
-          x: smoothX,
-          y: smoothY,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
-      />
 
       {/* Main content container */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
@@ -111,7 +100,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"
         >
           <Sparkles size={16} className="text-purple-400" />
-          <span className="text-sm text-neutral-300 font-medium">
+          <span className="font-2 text-sm text-white font-medium">
             Welcome to the future of design
           </span>
         </motion.div>
@@ -121,7 +110,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 purl"
+          className="text-6xl md:text-8xl lg:text-8xl mb-6 bilgie font-medium !leading-[130%]"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
@@ -130,7 +119,7 @@ export default function Hero() {
           </span>
           <br />
           <span className="inline-block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient animation-delay-1000">
-            The Creative Developer
+            Creative Developer
           </span>
         </motion.h1>
 
@@ -139,7 +128,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl md:text-2xl text-neutral-400 mb-12 max-w-3xl mx-auto leading-relaxed"
+          className="font-2 text-xl md:text-2xl text-white mb-12 max-w-3xl mx-auto leading-relaxed"
         >
           Crafting beautiful digital experiences with cutting-edge technology
           and pixel-perfect design
@@ -155,7 +144,7 @@ export default function Hero() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="group px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold text-lg flex items-center gap-2 shadow-2xl shadow-purple-500/50 hover:shadow-purple-500/70 transition-shadow"
+            className="font-2 group px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold text-lg flex items-center gap-2 shadow-2xl shadow-purple-500/50 hover:shadow-purple-500/70 transition-shadow"
           >
             View My Work
             <ArrowRight
@@ -167,7 +156,7 @@ export default function Hero() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-white font-semibold text-lg hover:bg-white/10 transition-colors"
+            className="font-2 px-8 py-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-white font-semibold text-lg hover:bg-white/10 transition-colors"
           >
             Get in Touch
           </motion.button>
@@ -218,22 +207,6 @@ export default function Hero() {
           })}
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.5 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-2"
-        >
-          <motion.div className="w-1.5 h-1.5 rounded-full bg-white/50" />
-        </motion.div>
-      </motion.div>
 
       {/* Add required CSS animations */}
       <style jsx>{`
